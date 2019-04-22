@@ -23,6 +23,7 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lblChargePc = New System.Windows.Forms.Label()
         Me.tmrMain = New System.Windows.Forms.Timer(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
@@ -39,9 +40,10 @@ Partial Class frmMain
         '
         'lblChargePc
         '
-        Me.lblChargePc.Location = New System.Drawing.Point(6, 42)
+        Me.lblChargePc.Location = New System.Drawing.Point(9, 65)
+        Me.lblChargePc.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblChargePc.Name = "lblChargePc"
-        Me.lblChargePc.Size = New System.Drawing.Size(308, 20)
+        Me.lblChargePc.Size = New System.Drawing.Size(462, 31)
         Me.lblChargePc.TabIndex = 0
         Me.lblChargePc.Text = "lblChargePc"
         Me.lblChargePc.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -53,9 +55,10 @@ Partial Class frmMain
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(6, 12)
+        Me.Label2.Location = New System.Drawing.Point(9, 18)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(308, 17)
+        Me.Label2.Size = New System.Drawing.Size(462, 26)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Battery Charge:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -63,87 +66,96 @@ Partial Class frmMain
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 62)
+        Me.Label3.Location = New System.Drawing.Point(18, 95)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 13)
+        Me.Label3.Size = New System.Drawing.Size(53, 20)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Mode:"
         '
         'lblCharging
         '
         Me.lblCharging.AutoSize = True
-        Me.lblCharging.Location = New System.Drawing.Point(73, 62)
+        Me.lblCharging.Location = New System.Drawing.Point(110, 95)
+        Me.lblCharging.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblCharging.Name = "lblCharging"
-        Me.lblCharging.Size = New System.Drawing.Size(59, 13)
+        Me.lblCharging.Size = New System.Drawing.Size(88, 20)
         Me.lblCharging.TabIndex = 2
         Me.lblCharging.Text = "lblCharging"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(183, 62)
+        Me.Label5.Location = New System.Drawing.Point(274, 95)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(72, 13)
+        Me.Label5.Size = New System.Drawing.Size(106, 20)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Time Remain:"
         '
         'lblLifeRemain
         '
         Me.lblLifeRemain.AutoSize = True
-        Me.lblLifeRemain.Location = New System.Drawing.Point(252, 62)
+        Me.lblLifeRemain.Location = New System.Drawing.Point(378, 95)
+        Me.lblLifeRemain.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLifeRemain.Name = "lblLifeRemain"
-        Me.lblLifeRemain.Size = New System.Drawing.Size(70, 13)
+        Me.lblLifeRemain.Size = New System.Drawing.Size(105, 20)
         Me.lblLifeRemain.TabIndex = 4
         Me.lblLifeRemain.Text = "lblLifeRemain"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(183, 79)
+        Me.Label7.Location = New System.Drawing.Point(274, 122)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(60, 13)
+        Me.Label7.Size = New System.Drawing.Size(86, 20)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Time Total:"
         '
         'lblFullLifetime
         '
         Me.lblFullLifetime.AutoSize = True
-        Me.lblFullLifetime.Location = New System.Drawing.Point(252, 79)
+        Me.lblFullLifetime.Location = New System.Drawing.Point(378, 122)
+        Me.lblFullLifetime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFullLifetime.Name = "lblFullLifetime"
-        Me.lblFullLifetime.Size = New System.Drawing.Size(69, 13)
+        Me.lblFullLifetime.Size = New System.Drawing.Size(105, 20)
         Me.lblFullLifetime.TabIndex = 6
         Me.lblFullLifetime.Text = "lblFullLifetime"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 79)
+        Me.Label1.Location = New System.Drawing.Point(18, 122)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(91, 20)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Power Line:"
         '
         'lblPowerLineStatus
         '
         Me.lblPowerLineStatus.AutoSize = True
-        Me.lblPowerLineStatus.Location = New System.Drawing.Point(73, 79)
+        Me.lblPowerLineStatus.Location = New System.Drawing.Point(110, 122)
+        Me.lblPowerLineStatus.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblPowerLineStatus.Name = "lblPowerLineStatus"
-        Me.lblPowerLineStatus.Size = New System.Drawing.Size(97, 13)
+        Me.lblPowerLineStatus.Size = New System.Drawing.Size(145, 20)
         Me.lblPowerLineStatus.TabIndex = 8
         Me.lblPowerLineStatus.Text = "lblPowerLineStatus"
         '
         'pbCharge
         '
-        Me.pbCharge.Location = New System.Drawing.Point(6, 29)
+        Me.pbCharge.Location = New System.Drawing.Point(9, 45)
+        Me.pbCharge.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.pbCharge.Name = "pbCharge"
-        Me.pbCharge.Size = New System.Drawing.Size(308, 10)
+        Me.pbCharge.Size = New System.Drawing.Size(462, 15)
         Me.pbCharge.TabIndex = 10
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(320, 103)
+        Me.ClientSize = New System.Drawing.Size(480, 158)
         Me.Controls.Add(Me.pbCharge)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblPowerLineStatus)
@@ -156,6 +168,8 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblChargePc)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "frmMain"
         Me.Text = "Stattery"
         Me.ResumeLayout(False)
