@@ -38,4 +38,4 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-N/a
+* Battery Icon made by Freepik from (https://www.flaticon.com/) is licensed by (http://creativecommons.org/licenses/by/3.0/)
