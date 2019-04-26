@@ -28,6 +28,8 @@ Public Class frmMain
                 lblCharging.Text = "Battery removed"
             Case BatteryChargeStatus.Unknown
                 lblCharging.Text = "Unknown"
+            Case Else
+                lblCharging.Text = "Cannot detect status."
         End Select
 
         If power.PowerLineStatus = PowerLineStatus.Online Then
@@ -52,11 +54,11 @@ Public Class frmMain
                 lblFullLifetime.Text = "Unknown"
         End Select
 
-        Dim batt As New PerformanceCounter()
-        With batt
-            .CategoryName = "Battery Status"
-            .CounterName = "Remaining Capacity"
-            .InstanceName = "ACPI\PNP0C0A\0_0"
-        End With
+        'Dim batt As New PerformanceCounter()
+        'With batt
+        '.CategoryName = "Battery Status"
+        '.CounterName = "Remaining Capacity"
+        '.InstanceName = "ACPI\PNP0C0A\0_0"
+        'End With
     End Sub
 End Class
